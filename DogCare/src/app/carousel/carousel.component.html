@@ -1,22 +1,9 @@
 <section class="carousel-container">
-    <section class="carousel" #carousel>
-      <div class="carousel-slide">
-        <img src="../../assets/dogs1.png" alt="dog photography">
-      </div>
-      <div class="carousel-slide">
-        <img src="../../assets/dogs2.jpg" alt="dog photography">   
-      </div>
-      <div class="carousel-slide">
-        <img src="../../assets/dogs3.png" alt="dog photography">
-      </div>
-      <div class="carousel-slide">
-        <img src="../../assets/dogs4.png" alt="dog photography">
-      </div>
-      <div class="carousel-slide">
-        <img src="../../assets/dogs5.png" alt="dog photography">
-      </div>      
-    </section>
-    <button class="carousel-button prev" id="prevButton">&lt;</button>
-      <button class="carousel-button next" id="nextButton">&gt;</button>
+  <section class="carousel">
+    <div class="carousel-slide">
+      <img [src]="images[currentIndex].src" [alt]="images[currentIndex].alt">
+    </div>
   </section>
-  
+  <button class="carousel-button prev" id="prevButton" (click)="prevImage()">&lt;</button>
+  <button class="carousel-button next" id="nextButton" (click)="nextImage()">&gt;</button>
+</section>

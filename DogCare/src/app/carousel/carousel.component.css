@@ -18,20 +18,27 @@
     line-height: 1;
 }
 
+.carousel-slide img {
+    height: 23em;
+    width: 100%;
+}
+
  .carousel-button {
     position: absolute;
-    top: 50%;
+    top: 30%;
    
     font-size: 2em;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FF975F;
-    color: #FFF6F6;
+    color: #FF975F;
+    background-color: #ffffff;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border: none;
+    outline: none;
+
 } 
 
 #prevButton {
