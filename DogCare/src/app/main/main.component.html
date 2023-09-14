@@ -1,1 +1,15 @@
-<p>main works!</p>
+<section class="breedInformation-container">
+    <div class="select">
+        <select name="dogName" id="dogName" [(ngModel)]="selectedDogName" (change)="changeDogData()">
+            <option *ngFor="let dog of breedData" [value]="dog.name">{{ dog.name }}</option>
+          </select> 
+    </div>
+
+    <div *ngIf="selectedDog.image_link">
+      <img [src]="selectedDog.image_link" [alt]="selectedDog.name">
+    </div>
+
+    <div class="information"></div>
+  </section>
+  
+  
