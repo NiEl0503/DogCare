@@ -11,10 +11,18 @@ export class MainComponent implements OnInit {
   selectedDogName: string = "";
   selectedDog: any = {
     image_link: "",
-    name: ""
+    name: "",
+    Shedding: "",
+    Grooming: "",
+    playfulness: "",
+    protectiveness: "",
+    energy: "",
+    barking: "",
+    trainability: "",
+    drooling: ""
   };
 
-  constructor(private dogApiService: DogApiService) {}
+  constructor(private dogApiService: DogApiService) { }
 
   ngOnInit(): void {
     this.dogApiService.getDogBreed('%20')
@@ -26,7 +34,7 @@ export class MainComponent implements OnInit {
   changeDogData() {
     this.dogApiService.getDogBreed(this.selectedDogName)
       .subscribe((data: any) => {
-        this.selectedDog.image_link = data[0]?.image_link || "https://svgsilh.com/svg/1185460.svg";
+        this.selectedDog.image_link = data[0]?.image_link;
       });
   }
 }

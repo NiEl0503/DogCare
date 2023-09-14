@@ -5,11 +5,12 @@
           </select> 
     </div>
 
+    <div class="api-container">
     <div *ngIf="selectedDog.image_link">
       <img [src]="selectedDog.image_link" [alt]="selectedDog.name">
     </div>
+</div>
 
-    <div class="information"></div>
   </section>
   
   
