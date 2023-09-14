@@ -14,8 +14,6 @@ export class DogApiService {
   constructor(private http: HttpClient) { }
 
   getDogBreed(name: string): Observable<any>{
-  
     return this.http.get(`${this.apiUrl}?name=${name}`, {headers: this.header});
-  }
-  
+  }  
 }

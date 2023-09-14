@@ -1,0 +1,35 @@
+.breedInformation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image_link {
+    height: 50px;
+    width: 50px;
+}
+
+.select {
+    background-color: #FF975F;
+    color: #FFF6F6;
+}
+
+.select option{
+    background-color: #FF975F;
+    color: #FFF6F6;
+}
+
+.breedInformation-container img {
+    margin-top: 2em;
+    width: 20em;
+    height: 20em;
+}
+
+@media screen and (min-width: 48em) {
+    .breedInformation-container img {
+        margin-top: 2em;
+        width: 30em;
+        height: 30em;
+    }  
+}
