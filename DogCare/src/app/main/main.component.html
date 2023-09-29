@@ -1,4 +1,4 @@
-<section class="breedInformation-container">
+<!-- <section class="breedInformation-container">
     <div class="select">
         <select name="dogName" id="dogName" [(ngModel)]="selectedDogName" (change)="changeDogData()">
             <option *ngFor="let dog of breedData" [value]="dog.name">{{ dog.name }}</option>
@@ -13,4 +13,29 @@
 
   </section>
   
-  
+   -->
+
+<section class="breedInformation-container">
+  <div class="select">
+    <select name="dogName" id="dogName" [(ngModel)]="selectedDogName" (change)="changeDogData()">
+      <option *ngFor="let dog of breedData" [value]="dog.name">{{ dog.name }}</option>
+    </select>
+  </div>
+
+  <div class="api-container">
+    <div *ngIf="selectedDog.name">
+      <img [src]="selectedDog.image_link" [alt]="selectedDog.name">
+      <h2>Detalhes Adicionais</h2>
+      <p>Name: {{ selectedDog.name }}</p>
+      <p>Shedding: {{ selectedDog.Shedding }}</p>
+      <p>Grooming: {{ selectedDog.Grooming }}</p>
+      <p>Playfulness: {{ selectedDog.playfulness }}</p>
+      <p>Protectiveness: {{ selectedDog.protectiveness }}</p>
+      <p>Energy: {{ selectedDog.energy }}</p>
+      <p>Barking: {{ selectedDog.barking }}</p>
+      <p>Trainability: {{ selectedDog.trainability }}</p>
+      <p>Drooling: {{ selectedDog.drooling }}</p>
+    </div>
+
+  </div>
+</section>
