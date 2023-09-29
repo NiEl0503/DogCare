@@ -16,4 +16,8 @@ export class DogApiService {
   getDogBreed(name: string): Observable<any>{
     return this.http.get(`${this.apiUrl}?name=${name}`, {headers: this.header});
   }  
+
+  getMoreDogDetails(Shedding: string): Observable<any> {
+        return this.http.get(`${this.apiUrl}/more-details?name=${Shedding}`, { headers: this.header });
+  }
 }
