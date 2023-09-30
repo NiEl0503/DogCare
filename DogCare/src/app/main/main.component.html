@@ -1,20 +1,3 @@
-<!-- <section class="breedInformation-container">
-    <div class="select">
-        <select name="dogName" id="dogName" [(ngModel)]="selectedDogName" (change)="changeDogData()">
-            <option *ngFor="let dog of breedData" [value]="dog.name">{{ dog.name }}</option>
-          </select> 
-    </div>
-
-    <div class="api-container">
-    <div *ngIf="selectedDog.image_link">
-      <img [src]="selectedDog.image_link" [alt]="selectedDog.name">
-    </div>
-</div>
-
-  </section>
-  
-   -->
-
 <section class="breedInformation-container">
   <div class="select">
     <select name="dogName" id="dogName" [(ngModel)]="selectedDogName" (change)="changeDogData()">
@@ -25,8 +8,7 @@
   <div class="api-container">
     <div *ngIf="selectedDog.name">
       <img [src]="selectedDog.image_link" [alt]="selectedDog.name">
-      <h2>Detalhes Adicionais</h2>
-      <p>Name: {{ selectedDog.name }}</p>
+      <h2>{{ selectedDog.name }}</h2>
       <p>Shedding: {{ selectedDog.Shedding }}</p>
       <p>Grooming: {{ selectedDog.Grooming }}</p>
       <p>Playfulness: {{ selectedDog.playfulness }}</p>
@@ -38,4 +20,14 @@
     </div>
 
   </div>
+</section>
+
+<section class="footer-content">
+  <footer>Developer Ninoska Contreras</footer>
+  <a href="https://github.com/NiEl0503" target="_blank">
+    <i class="fa-brands fa-github"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/ninoska-contreras-86b075129" target="_blank">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
 </section>

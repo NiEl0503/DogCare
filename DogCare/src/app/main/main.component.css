@@ -15,15 +15,47 @@
     color: #FFF6F6;
 }
 
-.select option{
+.select option {
     background-color: #FF975F;
     color: #FFF6F6;
 }
 
-.breedInformation-container img {
-    margin-top: 2em;
-    width: 20em;
-    height: 20em;
+.api-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.api-container img {
+    width: 15em;
+        height: auto;
+        margin-top: .5em;
+}
+
+.api-container h2 {
+    color: #FF975F;
+    margin-bottom: 1em;
+}
+
+.api-container p {
+    background-color: #FF975F;
+    color: #FFF6F6;
+}
+
+.footer-content {
+    background-color: #FF975F;
+    color: #FFF6F6;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.footer-content a {
+    background-color: #FF975F;
+    color: #FFF6F6;
+    margin-left: 1em;
+    list-style: none;
 }
 
 @media screen and (min-width: 48em) {
@@ -31,5 +63,14 @@
         margin-top: 2em;
         width: 30em;
         height: 30em;
-    }  
+    }
+
+    .api-container img {
+        width: 25em;
+        height: auto;
+    }
+
+    .footer-content {
+        font-size: 1.5em;
+    }
 }
